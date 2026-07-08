@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #f5f7fb;
+  color: #111827;
+}
+
+.app-shell {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header h1 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(2rem, 2.5vw, 2.5rem);
+}
+
+header p {
+  margin: 0 0 1.5rem;
+  color: #475569;
+}
+
+.prompt-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.prompt-form label {
+  font-weight: 600;
+}
+
+.prompt-form textarea {
+  width: 100%;
+  min-height: 150px;
+  padding: 0.85rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.prompt-form button {
+  width: fit-content;
+  padding: 0.85rem 1.4rem;
+  border: none;
+  border-radius: 0.75rem;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.prompt-form button:disabled {
+  background: #93c5fd;
+  cursor: not-allowed;
+}
+
+.notice.error {
+  margin-top: 1rem;
+  color: #b91c1c;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  padding: 0.9rem 1rem;
+  border-radius: 0.75rem;
+}
+
+.response-block {
+  margin-top: 1.5rem;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  padding: 1.25rem;
+}
+
+.response-block pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
